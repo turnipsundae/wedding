@@ -24,7 +24,7 @@ class Guest(models.Model):
     comments = models.TextField(default="")
     plus_ones = models.IntegerField(default=0)
     date_created = models.DateField(default=date.today)
-    # added_by = models.ForeignKey()
+    added_by = models.ForeignKey("self", null=True)
 
     def __repr__(self):
         return "<Guest(first_name='%s', last_name='%s')>" % (self.first_name, self.last_name)

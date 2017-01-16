@@ -2,15 +2,17 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
+from .models import Meal, Guest
+
 # Create your views here.
 def index(request):
-    return HttpResponse("Wedding front page")
+    return render(request, 'wedding/index.html')
 
 def rsvp(request):
-    return HttpResponse("rsvp here")
+    return render(request, 'wedding/rsvp.html')
 
 def registry(request):
-    return HttpResponse("Registry page")
+    return render(request, 'wedding/registry.html')
 
 def accomodations(request):
-    return HttpResponse("Hotels around the area. Things to do.")
+    return render(request, 'wedding/accomodations.html')

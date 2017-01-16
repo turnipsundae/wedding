@@ -1,0 +1,12 @@
+<body>
+    <h1>Kevin and Melissa</h1>
+
+    <ul>
+        <li><a href="{% url 'wedding:index' %}">The Wedding</a></li>
+        <li><a href="{% url 'wedding:rsvp' %}">RSVP</a></li>
+        <li><a href="{% url 'wedding:registry' %}">Registry</a></li>
+        <li><a href="{% url 'wedding:accomodations' %}">Accomodations</a></li>
+    </ul>
+
+    {% block content %}{% endblock %}
+</body>

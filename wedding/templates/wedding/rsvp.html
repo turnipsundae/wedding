@@ -1,0 +1,32 @@
+{% extends "./base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1>{% block title %}RSVP{% endblock %}</h1>
+</div>
+
+<div class="row">
+    <div class="col-cs-18 col-sm-12">
+        <form method="post">
+        {% csrf_token %}
+            <div>
+                <div>
+                    <span><input type="text" name="first_name" placeholder="First name" value="{{ first_name }}"/></span>
+                    <span><input type="text" name="last_name" placeholder="Last name" value="{{ last_name }}"/></span>
+                </div>
+                <div><input type="text" name="email" placeholder="name@email.com" value="{{ email }}"/></div>
+                <div><input type="text" name="relationship" placeholder="Relationship to wedding party"/></div>
+                <div><input type="text" name="attending" placeholder="Attending"/></div>
+                <div><input type="text" name="meal" placeholder="Meal"/></div>
+                <div><input type="text" name="comment" placeholder="Leave a note"/></div>
+                <div><input type="text" name="plus_ones" placeholder="0"/></div>
+
+                <div><input type="submit" value="RSVP"/></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}
