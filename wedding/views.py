@@ -16,3 +16,6 @@ def registry(request):
 
 def accomodations(request):
     return render(request, 'wedding/accomodations.html')
+
+def test(request):
+    return render(request, 'wedding/test.html')
