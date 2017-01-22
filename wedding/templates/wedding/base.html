@@ -22,7 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{% static 'wedding/css/jumbotron-narrow.css' %}" rel="stylesheet">
-    <link href="{% static 'wedding/css/nav-justified.css' %}" rel="stylesheet">
+    <link href="{% static 'wedding/css/justified-nav.css' %}" rel="stylesheet">
     <link href="{% static 'wedding/css/styles.css' %}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,6 +43,7 @@
             <li><a href="{% url 'wedding:rsvp' %}">RSVP</a></li>
             <li><a href="{% url 'wedding:registry' %}">Registry</a></li>
             <li><a href="{% url 'wedding:accomodations' %}">Accomodations</a></li>
+            <li><a class="btn" data-toggle="modal" data-target="#myModal">RSVP2</a></li>           
           </ul>
         </nav>
       </div>
@@ -85,6 +86,25 @@
       <footer class="footer">
         <p>Made by Kevin</p>
       </footer>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- end Modal -->
 
     </div> <!-- /container -->
 

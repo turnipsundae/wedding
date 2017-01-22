@@ -8,20 +8,76 @@
     <div class="col-lg-12">
         <form method="post">
         {% csrf_token %}
-            <div>
-                <div>
-                    <span><input type="text" name="first_name" placeholder="First name" value="{{ first_name }}"/></span>
-                    <span><input type="text" name="last_name" placeholder="Last name" value="{{ last_name }}"/></span>
-                </div>
-                <div><input type="text" name="email" placeholder="name@email.com" value="{{ email }}"/></div>
-                <div><input type="text" name="relationship" placeholder="Relationship to wedding party"/></div>
-                <div><input type="text" name="attending" placeholder="Attending"/></div>
-                <div><input type="text" name="meal" placeholder="Meal"/></div>
-                <div><input type="text" name="comment" placeholder="Leave a note"/></div>
-                <div><input type="text" name="plus_ones" placeholder="0"/></div>
-
-                <div><input type="submit" value="RSVP"/></div>
+            <div class="form-group">
+                <!-- <label for="first_name">First name</label> -->
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First name">
             </div>
+            <div class="form-group">
+                <!-- <label for="last_name">Last name</label> -->
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last name">
+            </div>
+            <div class="form-group">
+                <!-- <label for="email">Email</label> -->
+                <input type="email" class="form-control" id="email" name="email" placeholder="YourEmailAddress@email.com">
+            </div>
+            <div class="form-group">
+                <label for="attending">Will you be attending?</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="attendingRadios" id="attendingRadios1" value="yes">
+                        Yes
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="attendingRadios" id="attendingRadios2" value="no">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="meal">Select meal option</label>
+                <select class="form-control" name="meal">
+                    <option>Chicken</option>
+                    <option>Vegetarian</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="relationship">Relationship to wedding party</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="relationshipRadios" id="relationshipRadios1" value="bride">
+                        I know the bride
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="relationshipRadios" id="relationshipRadios2" value="groom">
+                        I know the groom
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="relationshipRadios" id="relationshipRadios3" value="friendOfBride">
+                        I'm going with someone who knows the bride
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="relationshipRadios" id="relationshipRadios4" value="friendOfGroom">
+                        I'm going with someone who knows the groom
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Leave a comment</label>
+                <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div>
 </div>
