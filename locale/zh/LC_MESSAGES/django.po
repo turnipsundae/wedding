@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-23 20:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: wedding/templates/wedding/accomodations.html:5
+#: wedding/templates/wedding/base.html:46
+msgid "Accomodations"
+msgstr "住宿"
+
+#: wedding/templates/wedding/base.html:40
+msgid "Kevin and Melissa"
+msgstr "劉家曦和張予南"
+
+#: wedding/templates/wedding/base.html:43
+#: wedding/templates/wedding/index.html:13
+#, fuzzy
+#| msgid "The Wedding"
+msgid "Wedding"
+msgstr "婚禮信息"
+
+#: wedding/templates/wedding/base.html:44 wedding/templates/wedding/rsvp.html:5
+msgid "RSVP"
+msgstr "回复"
+
+#: wedding/templates/wedding/base.html:45
+#: wedding/templates/wedding/registry.html:5
+msgid "Registry"
+msgstr "註冊表"
+
+#: wedding/templates/wedding/base.html:47
+msgid "RSVP2"
+msgstr ""
+
+#: wedding/templates/wedding/index.html:19
+msgid "Gilbert, AZ"
+msgstr ""
+
+#: wedding/templates/wedding/rsvp.html:14
+msgid "First name"
+msgstr "姓名"
+
+#: wedding/templates/wedding/rsvp.html:22
+msgid "YourEmailAddress@email.com"
+msgstr "電子郵件"
+
+#: wedding/templates/wedding/rsvp.html:25
+msgid "Will you be attending?"
+msgstr "能否參加"
+
+#: wedding/templates/wedding/rsvp.html:29
+msgid "Yes"
+msgstr "能"
+
+#: wedding/templates/wedding/rsvp.html:35
+msgid "No"
+msgstr "不能"
+
+#: wedding/templates/wedding/rsvp.html:41
+msgid "Select meal option"
+msgstr "菜單選擇"
+
+#: wedding/templates/wedding/rsvp.html:43
+msgid "Chicken"
+msgstr "雞"
+
+#: wedding/templates/wedding/rsvp.html:44
+msgid "Vegetarian"
+msgstr "素菜"
+
+#: wedding/templates/wedding/rsvp.html:49
+msgid "Relationship to wedding party"
+msgstr "關係婚禮聚會"
+
+#: wedding/templates/wedding/rsvp.html:53
+msgid "I know the bride"
+msgstr "認識新娘"
+
+#: wedding/templates/wedding/rsvp.html:59
+msgid "I know the groom"
+msgstr "認識新郎"
+
+#: wedding/templates/wedding/rsvp.html:65
+msgid "I'm going with someone who knows the bride"
+msgstr "認識新娘親戚朋友"
+
+#: wedding/templates/wedding/rsvp.html:71
+msgid "I'm going with someone who knows the groom"
+msgstr "認識新郎親戚朋友"
+
+#: wedding/templates/wedding/rsvp.html:77
+msgid "Leave a comment"
+msgstr "請留下意見"
+
+#: wedding/templates/wedding/rsvp.html:81
+msgid "Submit"
+msgstr "发送"
+
+#: wedding/views.py:15
+#, fuzzy, python-brace-format
+#| msgid "{day}, {month} {date}, {year}"
+msgid "{day}, {month} {date}, {year}"
+msgstr "{year}年{month}月{date}日"
+
+#~ msgid "Welcome to our page"
+#~ msgstr "欢迎"

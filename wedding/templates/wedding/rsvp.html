@@ -1,7 +1,8 @@
 {% extends "./base.html" %}
 
+{% load i18n %}
 
-{% block content-title %}RSVP{% endblock content-title %}
+{% block content-title %}{% trans "RSVP" %}{% endblock content-title %}
 
 {% block content %}
 <div class="row marketing">
@@ -10,7 +11,7 @@
         {% csrf_token %}
             <div class="form-group">
                 <!-- <label for="first_name">First name</label> -->
-                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First name">
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="{% trans 'First name' %}">
             </div>
             <div class="form-group">
                 <!-- <label for="last_name">Last name</label> -->
@@ -18,66 +19,66 @@
             </div>
             <div class="form-group">
                 <!-- <label for="email">Email</label> -->
-                <input type="email" class="form-control" id="email" name="email" placeholder="YourEmailAddress@email.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="{% trans 'YourEmailAddress@email.com' %}">
             </div>
             <div class="form-group">
-                <label for="attending">Will you be attending?</label>
+                <label for="attending">{% trans "Will you be attending?" %}</label>
                 <div class="radio">
                     <label>
                         <input type="radio" name="attendingRadios" id="attendingRadios1" value="yes">
-                        Yes
+                        {% trans 'Yes' %}
                     </label>
                 </div>
                 <div class="radio">
                     <label>
                         <input type="radio" name="attendingRadios" id="attendingRadios2" value="no">
-                        No
+                        {% trans 'No' %}
                     </label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="meal">Select meal option</label>
+                <label for="meal">{% trans "Select meal option" %}</label>
                 <select class="form-control" name="meal">
-                    <option>Chicken</option>
-                    <option>Vegetarian</option>
+                    <option>{% trans "Chicken" %}</option>
+                    <option>{% trans "Vegetarian" %}</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="relationship">Relationship to wedding party</label>
+                <label for="relationship">{% trans "Relationship to wedding party" %}</label>
                 <div class="radio">
                     <label>
                         <input type="radio" name="relationshipRadios" id="relationshipRadios1" value="bride">
-                        I know the bride
+                        {% trans "I know the bride" %}
                     </label>
                 </div>
                 <div class="radio">
                     <label>
                         <input type="radio" name="relationshipRadios" id="relationshipRadios2" value="groom">
-                        I know the groom
+                        {% trans "I know the groom" %}
                     </label>
                 </div>
                 <div class="radio">
                     <label>
                         <input type="radio" name="relationshipRadios" id="relationshipRadios3" value="friendOfBride">
-                        I'm going with someone who knows the bride
+                        {% trans "I'm going with someone who knows the bride" %}
                     </label>
                 </div>
                 <div class="radio">
                     <label>
                         <input type="radio" name="relationshipRadios" id="relationshipRadios4" value="friendOfGroom">
-                        I'm going with someone who knows the groom
+                        {% trans "I'm going with someone who knows the groom" %}
                     </label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="comments">Leave a comment</label>
+                <label for="comments">{% trans "Leave a comment" %}</label>
                 <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">{% trans "Submit" %}</button>
         </form>
     </div>
 </div>
