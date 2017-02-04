@@ -123,7 +123,7 @@ USE_TZ = True
 from django.utils.translation import ugettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),
-    ('zh', _('Chinese')),
+    ('zh-hant', _('Traditional Chinese')),
 )
 
 LOCALE_PATHS = (
