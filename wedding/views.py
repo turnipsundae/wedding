@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from django.http import HttpResponse
 
 from .models import Meal, Guest
 
-from django.utils.translation import ugettext, activate
+from django.utils.translation import ugettext_lazy as _, activate
 
 from datetime import date
 
@@ -12,9 +12,12 @@ from datetime import date
 def index(request):
     # activate('zh')
     WEDDING_DATE = date(2018, 1, 28)
-    wedding_date = ugettext("{day}, {month} {date}, {year}").format(
+    wedding_date = _("{day}, {month} {date}, {year}").format(
         day=WEDDING_DATE.strftime("%A"), 
         month=WEDDING_DATE.strftime("%B"), 
+        # month2 is for chinese only
+        month2=WEDDING_DATE.strftime("%-m"),
+        # ##########################
         date=WEDDING_DATE.day, 
         year=WEDDING_DATE.year)
     context = {
@@ -36,7 +39,7 @@ def rsvp(request):
             attending = None
 
         meal = params.get("meal", "chicken")
-        meal = Meal.objects.filter(choice__startswith=meal).get()
+        meal = get_object_or_404(Meal, choice__startswith=meal)
 
         guest = Guest(first_name=params.get("first_name", ""),
             last_name=params.get("last_name", ""),

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-23 20:15-0800\n"
+"POT-Creation-Date: 2017-02-01 19:52-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: kevinhlau/settings.py:125
+msgid "Chinese"
+msgstr ""
+
+#: kevinhlau/settings.py:126
+msgid "English"
+msgstr ""
 
 #: wedding/templates/wedding/accomodations.html:5
 #: wedding/templates/wedding/base.html:46
@@ -114,7 +122,7 @@ msgstr "发送"
 #, fuzzy, python-brace-format
 #| msgid "{day}, {month} {date}, {year}"
 msgid "{day}, {month} {date}, {year}"
-msgstr "{year}年{month}月{date}日"
+msgstr "{year}年{month2}月{date}日"
 
 #~ msgid "Welcome to our page"
 #~ msgstr "欢迎"

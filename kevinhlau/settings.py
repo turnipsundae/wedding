@@ -120,11 +120,11 @@ USE_L10N = True
 USE_TZ = True
 
 # Added for localization
-# from django.utils.translation import ugettext_lazy as _
-# LANGUAGES = (
-#     ('en', _('English')),
-#     ('zh', _('Chinese')),
-# )
+from django.utils.translation import ugettext_lazy as _
+LANGUAGES = (
+    ('en', _('English')),
+    ('zh', _('Chinese')),
+)
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
