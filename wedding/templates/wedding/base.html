@@ -58,11 +58,7 @@
 
       {% block content %}{% endblock content %}
 
-
-      <footer class="footer">
-        <p>Made by Kevin</p>
-
-        <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <form action="{% url 'set_language' %}" method="post" style="position: fixed; right: 15px; bottom: 15px">{% csrf_token %}
             <input name="next" type="hidden" value="{{ redirect_to }}" />
             <select name="language">
                 {% get_current_language as LANGUAGE_CODE %}
@@ -76,6 +72,9 @@
             </select>
             <input type="submit" value="Go" />
         </form>
+
+      <footer class="footer">
+        <p>Made by Kevin</p>
       </footer>
 
     </div> <!-- /container -->

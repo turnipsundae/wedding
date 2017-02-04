@@ -13,10 +13,13 @@
                 <!-- <label for="first_name">First name</label> -->
                 <input type="text" class="form-control" id="first_name" name="first_name" placeholder="{% trans 'First name' %}">
             </div>
+            {% get_current_language as LANGUAGE %}
+            {% if LANGUAGE == 'en' %}
             <div class="form-group">
                 <!-- <label for="last_name">Last name</label> -->
                 <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last name">
             </div>
+            {% endif %}
             <div class="form-group">
                 <!-- <label for="email">Email</label> -->
                 <input type="email" class="form-control" id="email" name="email" placeholder="{% trans 'YourEmailAddress@email.com' %}">
