@@ -1,0 +1,17 @@
+branch-defaults:
+  master:
+    environment: test-env
+    group_suffix: null
+environment-defaults:
+  test-env:
+    branch: null
+    repository: null
+global:
+  application_name: kevinhlau
+  branch: null
+  default_ec2_keyname: mykeypair
+  default_platform: python3.4
+  default_region: us-west-2
+  profile: eb-cli
+  repository: null
+  sc: git
