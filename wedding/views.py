@@ -10,7 +10,6 @@ from datetime import date
 
 # Create your views here.
 def index(request):
-    # activate('zh')
     WEDDING_DATE = date(2018, 1, 28)
     wedding_date = _("{day}, {month} {date}, {year}").format(
         day=WEDDING_DATE.strftime("%A"), 
@@ -26,7 +25,6 @@ def index(request):
     return render(request, 'wedding/index.html', context)
 
 def rsvp(request):
-    # activate('zh')
     if request.method == "POST":
         params = request.POST
 
@@ -56,13 +54,10 @@ def rsvp(request):
     return render(request, 'wedding/rsvp.html')
 
 def registry(request):
-    # activate('zh')
     return render(request, 'wedding/registry.html')
 
 def accomodations(request):
-    # activate('zh')
     return render(request, 'wedding/accomodations.html')
 
 def test(request):
-    # activate('zh')
     return render(request, 'wedding/test.html')
