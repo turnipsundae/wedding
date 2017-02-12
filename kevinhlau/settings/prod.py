@@ -17,3 +17,16 @@ DEBUG = False
 # Allow all host headers
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['.elasticbeanstalk.com', '.kevinhlau.com']
+
+# Database
+# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'weddingdb',
+        'USER': 'crunchylaua',
+        'PASSWORD': 'Melissu214',
+        'HOST': 'weddingdbinstance.cspm334mwoz9.us-west-2.rds.amazonaws.com',
+        'PORT': '5432',
+    }
+}
