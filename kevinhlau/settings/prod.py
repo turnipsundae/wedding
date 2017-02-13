@@ -20,6 +20,8 @@ ALLOWED_HOSTS = ['.elasticbeanstalk.com', '.kevinhlau.com']
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
+# Checks for database in environment. If present, use it.
+# In this case, database should be RDS PostgreSQL from Amazon.
 
 if 'RDS_HOSTNAME' in os.environ:
     DATABASES = {

@@ -36,7 +36,7 @@ def rsvp(request):
         else:
             attending = None
 
-        meal = params.get("meal", "chicken")
+        meal = params.get("meal", "")
         meal = get_object_or_404(Meal, choice__startswith=meal)
 
         guest = Guest(first_name=params.get("first_name", ""),
@@ -50,7 +50,7 @@ def rsvp(request):
         
         guest.save()
 
-        return HttpResponse("Horray Check the Console")
+        return render(request, 'wedding/rsvp_complete.html')
     return render(request, 'wedding/rsvp.html')
 
 def registry(request):
