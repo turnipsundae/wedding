@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
+
 .nav {
   display: inline-block;
   float: none;
   vertical-align: top;
+}
+
+.main-title {
+    font-family: 'Poiret One', cursive;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
