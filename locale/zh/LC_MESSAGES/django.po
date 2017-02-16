@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-01 19:52-0800\n"
+"POT-Creation-Date: 2017-02-12 21:45-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,44 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: kevinhlau/settings.py:125
-msgid "Chinese"
-msgstr ""
-
-#: kevinhlau/settings.py:126
+#: kevinhlau/settings.py:125 kevinhlau/settings/base.py:125
 msgid "English"
 msgstr ""
 
+#: kevinhlau/settings.py:126 kevinhlau/settings/base.py:126
+msgid "Traditional Chinese"
+msgstr ""
+
 #: wedding/templates/wedding/accomodations.html:5
-#: wedding/templates/wedding/base.html:46
+#: wedding/templates/wedding/base.html:47
 msgid "Accomodations"
 msgstr "住宿"
 
-#: wedding/templates/wedding/base.html:40
+#: wedding/templates/wedding/base.html:41
 msgid "Kevin and Melissa"
 msgstr "劉家曦和張予南"
 
-#: wedding/templates/wedding/base.html:43
-#: wedding/templates/wedding/index.html:13
+#: wedding/templates/wedding/base.html:44
+#: wedding/templates/wedding/index.html:47
 #, fuzzy
 #| msgid "The Wedding"
 msgid "Wedding"
 msgstr "婚禮信息"
 
-#: wedding/templates/wedding/base.html:44 wedding/templates/wedding/rsvp.html:5
+#: wedding/templates/wedding/base.html:45 wedding/templates/wedding/rsvp.html:5
 msgid "RSVP"
 msgstr "回复"
 
-#: wedding/templates/wedding/base.html:45
+#: wedding/templates/wedding/base.html:46
 #: wedding/templates/wedding/registry.html:5
 msgid "Registry"
 msgstr "註冊表"
 
-#: wedding/templates/wedding/base.html:47
-msgid "RSVP2"
-msgstr ""
-
-#: wedding/templates/wedding/index.html:19
+#: wedding/templates/wedding/index.html:53
 msgid "Gilbert, AZ"
 msgstr ""
 
@@ -62,63 +58,75 @@ msgstr ""
 msgid "First name"
 msgstr "姓名"
 
-#: wedding/templates/wedding/rsvp.html:22
+#: wedding/templates/wedding/rsvp.html:25
 msgid "YourEmailAddress@email.com"
 msgstr "電子郵件"
 
-#: wedding/templates/wedding/rsvp.html:25
+#: wedding/templates/wedding/rsvp.html:28
 msgid "Will you be attending?"
 msgstr "能否參加"
 
-#: wedding/templates/wedding/rsvp.html:29
+#: wedding/templates/wedding/rsvp.html:32
 msgid "Yes"
 msgstr "能"
 
-#: wedding/templates/wedding/rsvp.html:35
+#: wedding/templates/wedding/rsvp.html:38
 msgid "No"
 msgstr "不能"
 
-#: wedding/templates/wedding/rsvp.html:41
+#: wedding/templates/wedding/rsvp.html:44
 msgid "Select meal option"
 msgstr "菜單選擇"
 
-#: wedding/templates/wedding/rsvp.html:43
+#: wedding/templates/wedding/rsvp.html:46
 msgid "Chicken"
 msgstr "雞"
 
-#: wedding/templates/wedding/rsvp.html:44
+#: wedding/templates/wedding/rsvp.html:47
 msgid "Vegetarian"
 msgstr "素菜"
 
-#: wedding/templates/wedding/rsvp.html:49
+#: wedding/templates/wedding/rsvp.html:52
 msgid "Relationship to wedding party"
 msgstr "關係婚禮聚會"
 
-#: wedding/templates/wedding/rsvp.html:53
+#: wedding/templates/wedding/rsvp.html:56
 msgid "I know the bride"
 msgstr "認識新娘"
 
-#: wedding/templates/wedding/rsvp.html:59
+#: wedding/templates/wedding/rsvp.html:62
 msgid "I know the groom"
 msgstr "認識新郎"
 
-#: wedding/templates/wedding/rsvp.html:65
+#: wedding/templates/wedding/rsvp.html:68
 msgid "I'm going with someone who knows the bride"
 msgstr "認識新娘親戚朋友"
 
-#: wedding/templates/wedding/rsvp.html:71
+#: wedding/templates/wedding/rsvp.html:74
 msgid "I'm going with someone who knows the groom"
 msgstr "認識新郎親戚朋友"
 
-#: wedding/templates/wedding/rsvp.html:77
+#: wedding/templates/wedding/rsvp.html:80
 msgid "Leave a comment"
 msgstr "請留下意見"
 
-#: wedding/templates/wedding/rsvp.html:81
+#: wedding/templates/wedding/rsvp.html:84
 msgid "Submit"
 msgstr "发送"
 
-#: wedding/views.py:15
+#: wedding/templates/wedding/rsvp_complete.html:5
+msgid "RSVP Complete"
+msgstr "回复完成"
+
+#: wedding/templates/wedding/rsvp_complete.html:10
+msgid "Thank you for responding!"
+msgstr "謝謝你的回复."
+
+#: wedding/templates/wedding/rsvp_complete.html:11
+msgid "Click here to return to home page."
+msgstr "返回主頁."
+
+#: wedding/views.py:14
 #, fuzzy, python-brace-format
 #| msgid "{day}, {month} {date}, {year}"
 msgid "{day}, {month} {date}, {year}"
