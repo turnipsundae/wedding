@@ -8,6 +8,14 @@
 
 .main-title {
     font-family: 'Poiret One', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.language-change {
+  position: fixed; 
+  right: 15px; 
+  bottom: 15px;
 }
 
 body {
