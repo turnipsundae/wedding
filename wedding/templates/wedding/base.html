@@ -36,19 +36,37 @@
 
   <body>
 
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'wedding:index' %}">Melissa and Kevin</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="{% url 'wedding:index' %}">{% trans "Wedding" %}</a></li>
+                <li><a href="{% url 'wedding:rsvp' %}">{% trans "RSVP" %}</a></li>
+                <li><a href="{% url 'wedding:registry' %}">{% trans "Registry" %}</a></li>
+                <li><a href="{% url 'wedding:accomodations' %}">{% trans "Accomodations" %}</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
     {% block jumbo-picture %}{% endblock jumbo-picture %}
       
     <div class="container">
       <div class="masthead" style="margin-bottom: 20px">
         <h1 class="text-muted main-title" style="text-align: center">{% trans "Kevin and Melissa" %}</h1>
-        <nav class="navbar">
-          <ul class="nav nav-justified">
-            <li><a href="{% url 'wedding:index' %}">{% trans "Wedding" %}</a></li>
-            <li><a href="{% url 'wedding:rsvp' %}">{% trans "RSVP" %}</a></li>
-            <li><a href="{% url 'wedding:registry' %}">{% trans "Registry" %}</a></li>
-            <li><a href="{% url 'wedding:accomodations' %}">{% trans "Accomodations" %}</a></li>
-          </ul>
-        </nav>
       </div>
             
       <div class="row marketing">
@@ -87,6 +105,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="{% static 'wedding/js/bootstrap.min.js' %}"></script>
+    <script>
+      $(document).ready(function() {
+        $('.nav li a[href="' + this.location.pathname + '"]').parent().addClass('active');
+      });
+      $(".nav li a").on("click", function(){
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+      });
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
