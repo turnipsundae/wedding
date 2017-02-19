@@ -14,7 +14,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="{% static 'wedding/img/favicon.png' %}"/>
 
-    <title>{% block title %}Kevin and Melissa Wedding{% endblock %}</title>
+    <title>{% block title %}Kevin and Melissa{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'wedding/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -65,7 +65,7 @@
     {% block jumbo-picture %}{% endblock jumbo-picture %}
       
     <div class="container">
-      <div class="masthead" style="margin-bottom: 20px">
+      <div class="masthead">
         <h1 class="text-muted main-title">{% trans "Kevin and Melissa" %}</h1>
       </div>
             
@@ -109,11 +109,13 @@
       $(document).ready(function() {
         $('.nav li a[href="' + this.location.pathname + '"]').parent().addClass('active');
       });
+      
       $(".nav li a").on("click", function(){
         $(".nav").find(".active").removeClass("active");
         $(this).parent().addClass("active");
       });
     </script>
+    {% block scripts %}{% endblock scripts %}
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
