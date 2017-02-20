@@ -17,33 +17,27 @@ $(function() {
       },
       attendingRadios: {
         required: true,
-      },
-      relationshipRadios: {
-        required: true,
       }
     },
     // Specify validation error messages
     messages: {
       firstname: "Please enter your firstname",      
       email: "Please enter a valid email address",
-      attendingRadios: "Please let us know if you are attending",
-      relationshipRadios: "This is a required field",
+      attendingRadios: "Please let us know if you are attending"
     },
-    // Highlight fields with errors
+    
     highlight: function (element) {
-      $(element).closest('.form-group').removeClass('success').addClass('has-error');
+            $(element).closest('.control-group').removeClass('success').addClass('error');
     },
-    // Create label for error messages
-    errorElement: 'label',
-    errorClass: 'control-label',
-    // Specify error message placement
     errorPlacement: function (error, element) {
       if (element.attr('type') == 'radio') {
-        element.closest('.form-group').append(error);
+        error.insertAfter(element.closest('radio'));
       } else {
         error.insertAfter(element);
       }
     },
+    errorElement: 'label',
+    errorClass: 'has-error',
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
     submitHandler: function(form) {

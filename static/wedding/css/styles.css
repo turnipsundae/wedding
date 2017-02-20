@@ -8,6 +8,15 @@
 
 .main-title {
     font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    text-align: center;
+    display: none;
+}
+
+.language-change {
+  position: fixed; 
+  right: 15px; 
+  bottom: 15px;
 }
 
 body {
@@ -149,6 +158,12 @@ body {
 
   .featurette-heading {
     font-size: 50px;
+  }
+
+  .main-title {
+    display: block;
+    position: relative;
+    margin-top: 70px;
   }
 
   .navbar-brand {
