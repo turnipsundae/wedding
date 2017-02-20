@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-12 21:45-0800\n"
+"POT-Creation-Date: 2017-02-19 22:03-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,91 +26,100 @@ msgid "Traditional Chinese"
 msgstr ""
 
 #: wedding/templates/wedding/accomodations.html:5
-#: wedding/templates/wedding/base.html:47
+#: wedding/templates/wedding/base.html:57
 msgid "Accomodations"
 msgstr "住宿"
 
-#: wedding/templates/wedding/base.html:41
+#: wedding/templates/wedding/base.html:50
+#: wedding/templates/wedding/base.html:69
+#: wedding/templates/wedding/index.html:60
 msgid "Kevin and Melissa"
 msgstr "劉家曦和張予南"
 
-#: wedding/templates/wedding/base.html:44
-#: wedding/templates/wedding/index.html:47
+#: wedding/templates/wedding/base.html:54
 #, fuzzy
 #| msgid "The Wedding"
 msgid "Wedding"
 msgstr "婚禮信息"
 
-#: wedding/templates/wedding/base.html:45 wedding/templates/wedding/rsvp.html:5
+#: wedding/templates/wedding/base.html:55 wedding/templates/wedding/rsvp.html:6
 msgid "RSVP"
 msgstr "回复"
 
-#: wedding/templates/wedding/base.html:46
+#: wedding/templates/wedding/base.html:56
 #: wedding/templates/wedding/registry.html:5
 msgid "Registry"
 msgstr "註冊表"
 
-#: wedding/templates/wedding/index.html:53
+#: wedding/templates/wedding/index.html:66
+msgid "Reception"
+msgstr "婚禮信息"
+
+#: wedding/templates/wedding/index.html:67
 msgid "Gilbert, AZ"
 msgstr ""
 
-#: wedding/templates/wedding/rsvp.html:14
+#: wedding/templates/wedding/registry.html:11
+msgid "We just want you at our wedding!"
+msgstr "我們希望你會參加我們的婚禮, 別送禮物."
+
+#: wedding/templates/wedding/rsvp.html:15
 msgid "First name"
 msgstr "姓名"
 
-#: wedding/templates/wedding/rsvp.html:25
+#: wedding/templates/wedding/rsvp.html:26
 msgid "YourEmailAddress@email.com"
 msgstr "電子郵件"
 
-#: wedding/templates/wedding/rsvp.html:28
+#: wedding/templates/wedding/rsvp.html:29
 msgid "Will you be attending?"
 msgstr "能否參加"
 
-#: wedding/templates/wedding/rsvp.html:32
+#: wedding/templates/wedding/rsvp.html:33
 msgid "Yes"
 msgstr "能"
 
-#: wedding/templates/wedding/rsvp.html:38
+#: wedding/templates/wedding/rsvp.html:39
 msgid "No"
 msgstr "不能"
 
-#: wedding/templates/wedding/rsvp.html:44
+#: wedding/templates/wedding/rsvp.html:45
 msgid "Select meal option"
 msgstr "菜單選擇"
 
-#: wedding/templates/wedding/rsvp.html:46
+#: wedding/templates/wedding/rsvp.html:47
 msgid "Chicken"
 msgstr "雞"
 
-#: wedding/templates/wedding/rsvp.html:47
+#: wedding/templates/wedding/rsvp.html:48
 msgid "Vegetarian"
 msgstr "素菜"
 
-#: wedding/templates/wedding/rsvp.html:52
+#: wedding/templates/wedding/rsvp.html:53
 msgid "Relationship to wedding party"
 msgstr "關係婚禮聚會"
 
-#: wedding/templates/wedding/rsvp.html:56
+#: wedding/templates/wedding/rsvp.html:57
 msgid "I know the bride"
 msgstr "認識新娘"
 
-#: wedding/templates/wedding/rsvp.html:62
+#: wedding/templates/wedding/rsvp.html:63
 msgid "I know the groom"
 msgstr "認識新郎"
 
-#: wedding/templates/wedding/rsvp.html:68
+#: wedding/templates/wedding/rsvp.html:69
 msgid "I'm going with someone who knows the bride"
 msgstr "認識新娘親戚朋友"
 
-#: wedding/templates/wedding/rsvp.html:74
+#: wedding/templates/wedding/rsvp.html:75
 msgid "I'm going with someone who knows the groom"
 msgstr "認識新郎親戚朋友"
 
-#: wedding/templates/wedding/rsvp.html:80
+#: wedding/templates/wedding/rsvp.html:81
 msgid "Leave a comment"
 msgstr "請留下意見"
 
-#: wedding/templates/wedding/rsvp.html:84
+#: wedding/templates/wedding/rsvp.html:85
 msgid "Submit"
 msgstr "发送"
 
@@ -131,6 +140,11 @@ msgstr "返回主頁."
 #| msgid "{day}, {month} {date}, {year}"
 msgid "{day}, {month} {date}, {year}"
 msgstr "{year}年{month2}月{date}日"
+
+#~ msgid ""
+#~ "At the top of our list is to have you at our wedding! But if you would "
+#~ "also like to gift us something, take a look at our list on Amazon."
+#~ msgstr "我們希望你會參加我們的婚禮, 別送禮物."
 
 #~ msgid "Welcome to our page"
 #~ msgstr "欢迎"
