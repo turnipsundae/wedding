@@ -53,7 +53,10 @@
               <ul class="nav navbar-nav">
                 <li><a href="{% url 'wedding:index' %}">{% trans "Wedding" %}</a></li>
                 <li><a href="{% url 'wedding:rsvp' %}">{% trans "RSVP" %}</a></li>
+                {% get_current_language as LANGUAGE_CODE %}
+                {% if LANGUAGE_CODE == 'en' %}
                 <li><a href="{% url 'wedding:registry' %}">{% trans "Registry" %}</a></li>
+                {% endif %}
                 <li><a href="{% url 'wedding:accomodations' %}">{% trans "Accomodations" %}</a></li>
               </ul>
             </div>
